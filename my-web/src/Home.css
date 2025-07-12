@@ -1,0 +1,28 @@
+.home-section {
+  margin-top: 80px;}
+
+.half-bg {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.4);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.below-half {
+  background: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}

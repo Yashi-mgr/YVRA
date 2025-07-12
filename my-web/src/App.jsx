@@ -1,12 +1,18 @@
 import React from 'react'
 
-import './yvra.css'
+
+import Navbar from './Navbar.jsx'
+import Home from './Home.jsx'
+
+import './Navbar.css'
+import './Home.css'
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Navbar />
+      <Home />
+    </>
   )
 }
 
