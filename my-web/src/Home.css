@@ -1,28 +1,65 @@
 .home-section {
-  margin-top: 80px;}
+  background-color: #fdf9f5;
+  margin-top: 60px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.half-bg {
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
+.layout {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-align: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.Image img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .hero-text {
-  font-size: 2.5rem;
-  font-weight: bold;
-  background-color: rgba(0,0,0,0.4);
-  padding: 1rem 2rem;
-  border-radius: 10px;
+  max-width: 250px;
+  text-align: center;
 }
 
-.below-half {
-  background: white;
-  padding: 3rem 2rem;
-  text-align: center;
-  font-size: 1.2rem;
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.moto {
+  font-size: 1rem;
+  color: #555;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.divider {
+  margin: 30px;
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 80%;
 }

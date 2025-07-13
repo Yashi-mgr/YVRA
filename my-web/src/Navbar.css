@@ -1,26 +1,26 @@
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 95%;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* Low soft shadow like Figma */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .logo {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 26px;
   letter-spacing: 1px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 50px;
+  margin-right: 100px;
 }
 
 .nav-links a {
