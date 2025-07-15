@@ -1,19 +1,23 @@
-/* RESET AND GLOBAL PROTECTION */
-*{
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-}
-
-html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;  /* 🛡️ No left/right scroll */
-  width: 100vw;
 }
 
-#root {
+html, body #root {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 100%;
+  background-color: #fdf9f5;
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }

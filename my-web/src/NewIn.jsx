@@ -28,7 +28,7 @@ const NewIn = () => {
   return (
     <section className="newin-section">
       <div className="newin-text">
-         <p className="small-label"> NEW ITEMS</p>
+         <p className="small-label"> What's New ?</p>
          <h2>New In</h2>
          <p>
          New arrivals, now dropping five days a week – discover the latest launches
