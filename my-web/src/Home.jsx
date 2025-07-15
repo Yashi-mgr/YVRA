@@ -4,6 +4,7 @@ import homeImage from './assets/homePage.jpeg'
 import cover from './assets/rightcover.jpeg'
 import NewIn from './NewIn.jsx'
 
+
 const Home = () => {
   return (
     <div className='home-section'>
@@ -26,7 +27,6 @@ const Home = () => {
       <hr className="divider" />
 
       <NewIn />
-      
     </div>
   )
 }

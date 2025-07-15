@@ -1,0 +1,19 @@
+/* RESET AND GLOBAL PROTECTION */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* 🛡️ No left/right scroll */
+  width: 100vw;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

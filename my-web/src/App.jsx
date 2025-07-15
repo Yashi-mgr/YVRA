@@ -1,19 +1,19 @@
 import React from 'react'
 
-
 import Navbar from './Navbar.jsx'
 import Home from './Home.jsx'
-
-import './Navbar.css'
-import './Home.css'
+import Footer from './Footer.jsx'
 
 function App() {
-  return (
-    <>
+   return (
+    <div className="app-container">
       <Navbar />
-      <Home />
-    </>
-  )
+      <main style={{ flex: 1 }}>
+        <Home />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default App

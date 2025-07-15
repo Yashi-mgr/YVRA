@@ -22,7 +22,7 @@ const products = [
     image: '/products/home4.jpeg',
     brand: 'SAINT LAURENT'
   }
-]
+];
 
 const NewIn = () => {
   return (
@@ -37,8 +37,8 @@ const NewIn = () => {
          <button className="shop-btn">Shop New In</button>
       </div>
 
-       <div className="New-In">
-         {products.map(item => (
+       <div className="newin-products">
+         {products.map((item) => (
            <div className="product-card" key={item.id}>
               <img src={item.image} alt={item.brand} />
               <p className="brand-name">{item.brand}</p>

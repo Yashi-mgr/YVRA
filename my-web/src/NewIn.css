@@ -1,19 +1,24 @@
 .newin-section {
   display: flex;
+  flex-direction: row;
   gap: 3rem;
   padding: 4rem 2rem;
   align-items: flex-start;
-  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .newin-text {
   max-width: 350px;
+  flex-shrink: 0;
 }
 
 .small-label {
   color: gray;
   letter-spacing: 2px;
   font-size: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .newin-text h2 {
@@ -25,6 +30,7 @@
   color: #444;
   font-size: 1rem;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .shop-btn {
@@ -41,18 +47,21 @@
   background-color: #333;
 }
 
-.New-In {
+.newin-products {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: nowrap;
   overflow-x: auto;
   padding-bottom: 1rem;
-  flex: 1; /*Take the remaining space beside the text*/
 }
 
 .product-card {
-  min-width: 150px;
+  min-width: 160px;
   text-align: center;
- margin-top: 10px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .product-card img {
@@ -60,11 +69,33 @@
   height: 230px;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(68, 46, 30, 0.4), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.product-card:hover::after {
+  opacity: 1;
+}
 
 .brand-name {
   margin-top: 8px;
   font-weight: 600;
   font-size: 0.95rem;
+  color: #222;
 }
