@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './NewIn.css'
 
 const products = [
@@ -24,17 +25,23 @@ const products = [
   }
 ];
 
-const NewIn = () => {
+function NewIn() {
+   const navigate = useNavigate();
+
+   const handleShopClick = () => {
+     navigate('/shop');
+   };
+
   return (
     <section className="newin-section">
       <div className="newin-text">
-         <p className="small-label"> What's New ?</p>
-         <h2>New In</h2>
-         <p>
-         New arrivals, now dropping five days a week – discover the latest launches
-         onsite from Monday to Friday
-         </p>
-         <button className="shop-btn">Shop New In</button>
+        <p className="small-label"> What's New ?</p>
+        <h2>New In</h2>
+        <p>
+          New arrivals, now dropping five days a week – discover the latest launches
+          onsite from Monday to Friday
+        </p>
+        <button className="shop-btn" onClick={handleShopClick}>Shop New In</button>
       </div>
 
        <div className="newin-products">
