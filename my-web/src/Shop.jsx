@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import './Shop.css'
 
+import kelly from './assets/kelly.png'
 
 function Shop() {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ function Shop() {
       <section className="section">
         <h2>New In</h2>
         <div className="product-row">
-          <ProductCard image={img1} onClick={() => navigate('/shop/new-in')} />
+          <ProductCard image={kelly} onClick={() => navigate('/assets/kelly.png')} />
           <ProductCard image={img2} onClick={() => navigate('/shop/new-in')} />
         </div>
       </section>
