@@ -4,3 +4,13 @@
   width: 100%;
   min-height: 100vh;
 }
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.product-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}

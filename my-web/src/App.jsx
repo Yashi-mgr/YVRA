@@ -5,6 +5,8 @@ import Navbar from './Navbar.jsx'
 import Home from './Home.jsx'
 import Footer from './Footer.jsx'
 import Shop from './Shop.jsx'
+import NewInPage from './NewInPage.jsx'
+import TopSellersPage from './TopSellersPage.jsx'
 
 import './App.css';
 
@@ -12,10 +14,12 @@ function App() {
    return (
     <div className="app-container">
       <Navbar />
-      <main>
+      <main >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/new-in" element={<NewInPage />} />
+          <Route path="/shop/top-sellers" element={<TopSellersPage />} />
         </Routes>
       </main>
       <Footer />

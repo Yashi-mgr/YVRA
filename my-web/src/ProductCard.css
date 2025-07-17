@@ -1,0 +1,11 @@
+/* src/components/ProductCard.css */
+.product-card img {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+}
