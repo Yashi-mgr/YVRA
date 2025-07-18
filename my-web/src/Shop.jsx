@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import './Shop.css'
 
 import kelly from './assets/kelly.png'
+import shopCover1 from './assets/shopCover1.jpeg'
 
 function Shop() {
   const navigate = useNavigate();
@@ -15,15 +16,15 @@ function Shop() {
         <h2>New In</h2>
         <div className="product-row">
           <ProductCard image={kelly} onClick={() => navigate('/assets/kelly.png')} />
-          <ProductCard image={img2} onClick={() => navigate('/shop/new-in')} />
+          <ProductCard image={shopCover1} onClick={() => navigate('/assets/shopCover1.jpeg')} />
         </div>
       </section>
 
       <section className="section">
         <h2>Top Sellers</h2>
         <div className="product-row">
-          <ProductCard image={img3} onClick={() => navigate('/shop/top-sellers')} />
-          <ProductCard image={img4} onClick={() => navigate('/shop/top-sellers')} />
+          <ProductCard image={kelly} onClick={() => navigate('/assets/kelly.png')} />
+          <ProductCard image={shopCover1} onClick={() => navigate('/shop/new-sellers')} />
         </div>
       </section>
     </div>
