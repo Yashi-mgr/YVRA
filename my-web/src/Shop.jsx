@@ -15,8 +15,8 @@ function Shop() {
       <section className="section">
         <h2>New In</h2>
         <div className="product-row">
-          <ProductCard image={kelly} onClick={() => navigate('/assets/kelly.png')} />
-          <ProductCard image={shopCover1} onClick={() => navigate('/assets/shopCover1.jpeg')} />
+          <ProductCard image={kelly} brand="HERMÈS" onClick={() => navigate('/shop/new-in')} />
+          <ProductCard image={shopCover1} brand="SAINT LAURENT" onClick={() => navigate('/shop/new-in')} />
         </div>
       </section>
 

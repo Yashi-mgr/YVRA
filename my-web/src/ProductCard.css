@@ -1,11 +1,28 @@
-/* src/components/ProductCard.css */
-.product-card img {
-  width: 200px;
-  height: auto;
+.product-card {
+  min-width: 160px;
+  max-width: 200px;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s;
 }
 
-.product-card img:hover {
+.product-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
   transform: scale(1.05);
+}
+
+.brand-name {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #222;
 }
