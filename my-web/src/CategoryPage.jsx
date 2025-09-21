@@ -1,9 +1,8 @@
-// src/CategoryPage.jsx
 import React, { useState } from "react";
 import { categories, products } from "./DummyData";
 import ProductCard from "./ProductCard";
 
-import "./CategoryPage.css"; // style it separately
+import "./CategoryPage.css"; 
 
 function CategoryPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
