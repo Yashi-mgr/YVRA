@@ -1,6 +1,5 @@
-// ProductCard.jsx
 import React from 'react';
-import './ProductCard.css'; // Make sure CSS is imported
+import './ProductCard.css'; 
 
 function ProductCard({ image, brand, onClick }) {
   return (

@@ -10,8 +10,8 @@ const products = [
   },
   {
     id: 2,
-    image: '/products/home2.jpeg',
-    brand: 'SAINT LAURENT'
+    image: '/products/skirt.jpeg',
+    brand: 'Skirt'
   },
   {
     id: 3,
