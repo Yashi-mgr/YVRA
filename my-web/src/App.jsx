@@ -8,6 +8,7 @@ import Shop from './Shop.jsx'
 import NewInPage from './NewInPage.jsx'
 import TopSellersPage from './TopSellersPage.jsx'
 import ProductDetail from "./ProductDetail.jsx";
+import CartPage from './CartPage.jsx'
 
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/shop/new-in" element={<NewInPage />} />
           <Route path="/shop/top-sellers" element={<TopSellersPage />} />
           <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </main>
       <Footer />

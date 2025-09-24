@@ -79,10 +79,23 @@ select {
   border: 1px solid #ccc;
 }
 
+.qty-btn {
+  padding: 6px;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.qty-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+
+}
+
 .btn {
   display: inline-block;
-  padding: 5px 22px;
-  margin-right: 16px;
+  padding: 10px 22px;
+  margin-right: 18px;
   border: none;
   border-radius: 6px;
   font-size: 16px;

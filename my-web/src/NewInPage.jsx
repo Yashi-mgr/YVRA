@@ -8,13 +8,13 @@ import celine from './assets/celine.jpg';
 import pink from './assets/pink.jpg';
 
 function NewInPage() {
-  const categories = ['All', 'Accessories', 'Bags', 'Shoes', 'Dresses'];
+  const categories = ['All', 'Accessories', 'Bags', 'Footwear', 'Dresses'];
 
   const allProducts = [
-    { id: 1, name: 'Pearl Earrings', category: 'Accessories', image: earring, price: 'Rs. 799' },
-    { id: 2, name: 'Summer Flats', category: 'Shoes', image: flats, price: 'Rs. 2,499' },
-    { id: 3, name: 'White Bridal Bag', category: 'Bags', image: celine, price: 'Rs. 1,999' },
-    { id: 4, name: 'Summer Dress', category: 'Dresses', image: pink, price: 'Rs. 3,299' },
+    { id: 1, name: 'Pearl Earrings', category: 'Accessories', image: earring, price: 'NPR. 3,500' },
+    { id: 2, name: 'Summer Flats', category: 'Footwear', image: flats, price: 'NPR. 4,599' },
+    { id: 3, name: 'Hand Bag', category: 'Bags', image: celine, price: 'NPR. 5,999' },
+    { id: 4, name: 'Summer Dress', category: 'Dresses', image: pink, price: 'NPR. 3,499' },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState('All');
