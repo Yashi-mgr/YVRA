@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { CartContext } from "./CartContext.jsx";
 
 export default function CartPage() {
-  const { cartItems, removeFromCart } = useContext(CartContext);
+  const { cartItems, removeFromCart, updateQuantity } = useContext(CartContext);
 
   const totalPrice = cartItems.reduce((sum, item) => {
     let priceString = item.price.replace("NPR.", "").replace(/,/g, "").trim();
@@ -24,8 +24,24 @@ export default function CartPage() {
               <img src={item.image} alt={item.name} />
               <div>
                 <h3>{item.name}</h3>
-                <p>Quantity: {item.quantity}</p>
                 <p>Price: {item.price}</p>
+
+                <div className="quantity-controls">
+                  <button
+                    className="qty-btn"
+                    onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                    disabled={item.quantity === 1}
+                  >−</button>
+
+                  <span className="qty-display">{item.quantity}</span>
+
+                  <button
+                    className="qty-btn"
+                    onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                    disabled={item.quantity === 3}
+                  >+</button>
+                </div>
+
                 <button
                   className="remove-btn"
                   onClick={() => removeFromCart(item.id)}

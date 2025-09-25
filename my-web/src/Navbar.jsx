@@ -11,7 +11,7 @@ function Navbar() {
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/shop">Shop</Link></li>
-        <li><Link to="/cart" className="cart-link">Cart ({cartItems.length})
+        <li><Link to="/cart" className="cart-link"> 🛒{cartItems.length}
         </Link></li>
       </ul>
     </nav>
